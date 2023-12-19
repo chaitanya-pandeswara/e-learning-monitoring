@@ -329,7 +329,7 @@ alertmanager:
       slack_configs:
       - send_resolved: true
         channel: '#monitoring-k8s'
-        api_url: 'https://hooks.slack.com/services/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'
+        api_url: ''
 
     templates:
     - '/etc/alertmanager/config/*.tmpl'
