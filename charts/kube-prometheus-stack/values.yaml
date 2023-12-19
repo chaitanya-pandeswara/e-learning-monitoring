@@ -289,7 +289,7 @@ alertmanager:
   ##
   config:
     global:
-      resolve_timeout: 5m
+      resolve_timeout: 1m
     inhibit_rules:
       - source_matchers:
           - 'severity = critical'
@@ -325,6 +325,12 @@ alertmanager:
           - alertname = "Watchdog"
     receivers:
     - name: 'null'
+
+      slack_configs:
+      - send_resolved: true
+        channel: '#monitoring-k8s'
+        api_url: 'https://hooks.slack.com/services/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'
+
     templates:
     - '/etc/alertmanager/config/*.tmpl'
 
