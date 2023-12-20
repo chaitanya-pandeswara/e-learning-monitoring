@@ -329,16 +329,16 @@ alertmanager:
       slack_configs:
       - send_resolved: true
         channel: '#monitoring-k8s'
-        api_url: ''
+        api_url: 
 
       email_configs:
       - send_resolved: true
-        to: ''
-        from: ''
+        to: 
+        from: 
         smarthost: 'smtp.gmail.com:587'
-        auth_username: ''
-        auth_identity: ''
-        auth_password: ''
+        auth_username: 
+        auth_identity: 
+        auth_password: 
         require_tls: true  
 
     templates:
